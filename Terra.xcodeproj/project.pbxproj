@@ -11,6 +11,13 @@
 		760DCFF72AD167EE004D9315 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DCFF62AD167EE004D9315 /* ContentView.swift */; };
 		760DCFF92AD167EF004D9315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 760DCFF82AD167EF004D9315 /* Assets.xcassets */; };
 		760DCFFC2AD167EF004D9315 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 760DCFFB2AD167EF004D9315 /* Preview Assets.xcassets */; };
+		760DD0032AD16E7C004D9315 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DD0022AD16E7C004D9315 /* SearchBar.swift */; };
+		760DD0052AD17303004D9315 /* HorizontalCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DD0042AD17303004D9315 /* HorizontalCardComponent.swift */; };
+		760DD0072AD1906C004D9315 /* VerticalCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DD0062AD1906C004D9315 /* VerticalCardComponent.swift */; };
+		760DD0092AD1A9CB004D9315 /* TextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DD0082AD1A9CB004D9315 /* TextViewModel.swift */; };
+		760DD00B2AD1B16C004D9315 /* BeachDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DD00A2AD1B16B004D9315 /* BeachDetailView.swift */; };
+		760DD00D2AD1B373004D9315 /* BeachModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DD00C2AD1B373004D9315 /* BeachModel.swift */; };
+		760DD00F2AD1B939004D9315 /* BeachCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DD00E2AD1B939004D9315 /* BeachCardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		760DCFF62AD167EE004D9315 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		760DCFF82AD167EF004D9315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		760DCFFB2AD167EF004D9315 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		760DD0022AD16E7C004D9315 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		760DD0042AD17303004D9315 /* HorizontalCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCardComponent.swift; sourceTree = "<group>"; };
+		760DD0062AD1906C004D9315 /* VerticalCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCardComponent.swift; sourceTree = "<group>"; };
+		760DD0082AD1A9CB004D9315 /* TextViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewModel.swift; sourceTree = "<group>"; };
+		760DD00A2AD1B16B004D9315 /* BeachDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachDetailView.swift; sourceTree = "<group>"; };
+		760DD00C2AD1B373004D9315 /* BeachModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachModel.swift; sourceTree = "<group>"; };
+		760DD00E2AD1B939004D9315 /* BeachCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachCardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +67,14 @@
 			children = (
 				760DCFF42AD167EE004D9315 /* TerraApp.swift */,
 				760DCFF62AD167EE004D9315 /* ContentView.swift */,
+				760DD00C2AD1B373004D9315 /* BeachModel.swift */,
+				760DD00E2AD1B939004D9315 /* BeachCardViewModel.swift */,
+				760DD00A2AD1B16B004D9315 /* BeachDetailView.swift */,
 				760DCFF82AD167EF004D9315 /* Assets.xcassets */,
 				760DCFFA2AD167EF004D9315 /* Preview Content */,
+				760DD0022AD16E7C004D9315 /* SearchBar.swift */,
+				760DD0042AD17303004D9315 /* HorizontalCardComponent.swift */,
+				760DD0062AD1906C004D9315 /* VerticalCardComponent.swift */,
 			);
 			path = Terra;
 			sourceTree = "<group>";
@@ -63,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				760DCFFB2AD167EF004D9315 /* Preview Assets.xcassets */,
+				760DD0082AD1A9CB004D9315 /* TextViewModel.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -137,8 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				760DD00F2AD1B939004D9315 /* BeachCardViewModel.swift in Sources */,
 				760DCFF72AD167EE004D9315 /* ContentView.swift in Sources */,
 				760DCFF52AD167EE004D9315 /* TerraApp.swift in Sources */,
+				760DD00B2AD1B16C004D9315 /* BeachDetailView.swift in Sources */,
+				760DD0032AD16E7C004D9315 /* SearchBar.swift in Sources */,
+				760DD0092AD1A9CB004D9315 /* TextViewModel.swift in Sources */,
+				760DD0052AD17303004D9315 /* HorizontalCardComponent.swift in Sources */,
+				760DD0072AD1906C004D9315 /* VerticalCardComponent.swift in Sources */,
+				760DD00D2AD1B373004D9315 /* BeachModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
