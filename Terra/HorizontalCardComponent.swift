@@ -18,7 +18,7 @@ struct HorizontalCardComponent: View {
         
         ZStack(alignment: .leading){
             
-            RoundedRectangle(cornerRadius: 20)
+            RoundedRectangle(cornerRadius: 8)
             
                 .foregroundColor(.white)
             
@@ -64,8 +64,8 @@ struct HorizontalCardComponent: View {
                 
             }
             
-        }.frame(width: UIScreen.main.bounds.width * 0.5 , height: UIScreen.main.bounds.height * 0.15)
-            .clipShape(RoundedRectangle(cornerRadius: 20))
+        }.frame(width: UIScreen.main.bounds.width * 0.55 , height: UIScreen.main.bounds.height * 0.14)
+            .clipShape(RoundedRectangle(cornerRadius: 8))
         
         
         

@@ -9,9 +9,27 @@ import SwiftUI
 
 @main
 struct TerraApp: App {
+    
+    init() {
+           // Change the navigation bar appearance here
+        UINavigationBar.appearance().barTintColor = .white  // Set the desired background color
+       }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView{
+                ContentView()
+                    .tabItem(){
+                        Image(systemName: "beach.umbrella")
+                        Text("Coast")
+                    }
+                
+                ContentView()
+                    .tabItem(){
+                        Image(systemName: "exclamationmark.triangle")
+                        Text("Caution")
+                    }
+            }
+            
         }
     }
 }

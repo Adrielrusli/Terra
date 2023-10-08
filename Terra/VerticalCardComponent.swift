@@ -15,7 +15,7 @@ struct VerticalCardComponent: View {
         
         ZStack(alignment: .leading){
             
-            RoundedRectangle(cornerRadius: 20)             
+            RoundedRectangle(cornerRadius: 8)
                 .foregroundColor(.white)
                 
             HStack{
@@ -45,11 +45,23 @@ struct VerticalCardComponent: View {
                 
             }
             
-        }.frame(width: UIScreen.main.bounds.width * 0.9 , height: UIScreen.main.bounds.height * 0.15)
-            .clipShape(RoundedRectangle(cornerRadius: 20))
-            .onTapGesture {
-                BeachCardViewModel.shared.saveBeachCard(beachInformation)
-            }
+        }.frame(width: UIScreen.main.bounds.width * 0.92 , height: UIScreen.main.bounds.height * 0.14)
+            .clipShape(RoundedRectangle(cornerRadius: 8))
+            .gesture(
+                DragGesture(minimumDistance: 50)
+                    .onEnded{ gesture in
+                        if gesture.translation.width > 0 {
+                            BeachCardViewModel.shared.saveBeachCard(beachInformation)
+                        }else {
+                            
+                        }
+                        
+                    }
+            )
+//            .onLongPressGesture{
+//                BeachCardViewModel.shared.saveBeachCard(beachInformation)
+//            }
+
         
         
         
@@ -59,5 +71,5 @@ struct VerticalCardComponent: View {
 
 
 #Preview {
-    VerticalCardComponent(beachInformation: BeachCard(id: UUID(), isqa: 80, beachName: "Ancol", city: "Jakarta"))
+    VerticalCardComponent(beachInformation: BeachCard(id: UUID(), isqa: 80, beachName: "Ancol", city: "Jakarta", temperature: 26, uv: 7, windSpeed: 9))
 }

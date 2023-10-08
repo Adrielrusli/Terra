@@ -18,6 +18,7 @@
 		760DD00B2AD1B16C004D9315 /* BeachDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DD00A2AD1B16B004D9315 /* BeachDetailView.swift */; };
 		760DD00D2AD1B373004D9315 /* BeachModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DD00C2AD1B373004D9315 /* BeachModel.swift */; };
 		760DD00F2AD1B939004D9315 /* BeachCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DD00E2AD1B939004D9315 /* BeachCardViewModel.swift */; };
+		763225032AD2D0EF006B843B /* CautionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763225022AD2D0EF006B843B /* CautionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		760DD00A2AD1B16B004D9315 /* BeachDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachDetailView.swift; sourceTree = "<group>"; };
 		760DD00C2AD1B373004D9315 /* BeachModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachModel.swift; sourceTree = "<group>"; };
 		760DD00E2AD1B939004D9315 /* BeachCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachCardViewModel.swift; sourceTree = "<group>"; };
+		763225022AD2D0EF006B843B /* CautionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CautionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				760DCFF42AD167EE004D9315 /* TerraApp.swift */,
 				760DCFF62AD167EE004D9315 /* ContentView.swift */,
 				760DD00C2AD1B373004D9315 /* BeachModel.swift */,
+				763225022AD2D0EF006B843B /* CautionView.swift */,
 				760DD00E2AD1B939004D9315 /* BeachCardViewModel.swift */,
 				760DD00A2AD1B16B004D9315 /* BeachDetailView.swift */,
 				760DCFF82AD167EF004D9315 /* Assets.xcassets */,
@@ -160,6 +163,7 @@
 			files = (
 				760DD00F2AD1B939004D9315 /* BeachCardViewModel.swift in Sources */,
 				760DCFF72AD167EE004D9315 /* ContentView.swift in Sources */,
+				763225032AD2D0EF006B843B /* CautionView.swift in Sources */,
 				760DCFF52AD167EE004D9315 /* TerraApp.swift in Sources */,
 				760DD00B2AD1B16C004D9315 /* BeachDetailView.swift in Sources */,
 				760DD0032AD16E7C004D9315 /* SearchBar.swift in Sources */,
@@ -306,8 +310,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,8 +340,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
