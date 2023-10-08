@@ -48,6 +48,12 @@ struct ContentView: View {
                         ForEach(savedBeachCards) { beachCard in
                             HorizontalCardComponent(beachInformation: beachCard)
                             // You can add your HorizontalCardComponent here if needed
+                                .onTapGesture {
+                                    viewModel.selectedBeachCard = beachCard
+                                    shouldOpenDetail = true
+                                    print(shouldOpenDetail)
+                                    print(beachCard)
+                                }
                         }
                     }
                 }
