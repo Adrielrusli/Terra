@@ -13,18 +13,29 @@ struct SearchBar: View {
     
     var body: some View {
         VStack{
-            RoundedRectangle(cornerRadius: 20)
-                .fill(.white)
+            RoundedRectangle(cornerRadius: 30)
+                .fill(Color.white)
+//                .stroke(lineWidth: 2)
+//                .opacity(0.12)
                 
-                .stroke(.black, lineWidth: 2)
-                .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.05)
+                .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.04)
                 .overlay{
                     HStack{
 
-                        Image(systemName: "magnifyingglass")
-                            .padding(.leading, 10)
+//                        Image(systemName: "magnifyingglass")
+//                            .padding(.leading, 10)
                        
                         TextField("Search", text: $searchText)
+                            .padding(.leading, 20)
+                        
+                        Circle()
+                            .foregroundColor(.blue)
+                            .overlay{
+                                Image(systemName: "magnifyingglass")
+                                    .foregroundColor(.white)
+                            }
+                        
+                            
                        
                     }
                     
