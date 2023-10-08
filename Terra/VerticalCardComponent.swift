@@ -70,6 +70,6 @@ struct VerticalCardComponent: View {
     }
 
 
-#Preview {
-    VerticalCardComponent(beachInformation: BeachCard(id: UUID(), isqa: 80, beachName: "Ancol", city: "Jakarta", temperature: 26, uv: 7, windSpeed: 9))
-}
+//#Preview {
+//    VerticalCardComponent(beachInformation: BeachCard(id: UUID(), isqa: 80, beachName: "Ancol", city: "Jakarta", temperature: 26, uv: 7, windSpeed: 9))
+//}

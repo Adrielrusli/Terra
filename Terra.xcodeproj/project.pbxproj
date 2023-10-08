@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AABE3A72AD2E6E70065FADD /* water_quality.json in Resources */ = {isa = PBXBuildFile; fileRef = 4AABE3A62AD2E6E70065FADD /* water_quality.json */; };
+		4AABE3A92AD2EBE60065FADD /* ShowMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AABE3A82AD2EBE60065FADD /* ShowMapView.swift */; };
+		4AABE3AB2AD2EC230065FADD /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AABE3AA2AD2EC230065FADD /* LocationViewModel.swift */; };
 		760DCFF52AD167EE004D9315 /* TerraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DCFF42AD167EE004D9315 /* TerraApp.swift */; };
 		760DCFF72AD167EE004D9315 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DCFF62AD167EE004D9315 /* ContentView.swift */; };
 		760DCFF92AD167EF004D9315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 760DCFF82AD167EF004D9315 /* Assets.xcassets */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4AABE3A62AD2E6E70065FADD /* water_quality.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = water_quality.json; sourceTree = "<group>"; };
+		4AABE3A82AD2EBE60065FADD /* ShowMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMapView.swift; sourceTree = "<group>"; };
+		4AABE3AA2AD2EC230065FADD /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		760DCFF12AD167EE004D9315 /* Terra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Terra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		760DCFF42AD167EE004D9315 /* TerraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerraApp.swift; sourceTree = "<group>"; };
 		760DCFF62AD167EE004D9315 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +76,9 @@
 				760DCFF42AD167EE004D9315 /* TerraApp.swift */,
 				760DCFF62AD167EE004D9315 /* ContentView.swift */,
 				760DD00C2AD1B373004D9315 /* BeachModel.swift */,
+				4AABE3A82AD2EBE60065FADD /* ShowMapView.swift */,
+				4AABE3AA2AD2EC230065FADD /* LocationViewModel.swift */,
+				4AABE3A62AD2E6E70065FADD /* water_quality.json */,
 				763225022AD2D0EF006B843B /* CautionView.swift */,
 				760DD00E2AD1B939004D9315 /* BeachCardViewModel.swift */,
 				760DD00A2AD1B16B004D9315 /* BeachDetailView.swift */,
@@ -150,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				760DCFFC2AD167EF004D9315 /* Preview Assets.xcassets in Resources */,
+				4AABE3A72AD2E6E70065FADD /* water_quality.json in Resources */,
 				760DCFF92AD167EF004D9315 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,9 +174,11 @@
 				760DD00F2AD1B939004D9315 /* BeachCardViewModel.swift in Sources */,
 				760DCFF72AD167EE004D9315 /* ContentView.swift in Sources */,
 				763225032AD2D0EF006B843B /* CautionView.swift in Sources */,
+				4AABE3A92AD2EBE60065FADD /* ShowMapView.swift in Sources */,
 				760DCFF52AD167EE004D9315 /* TerraApp.swift in Sources */,
 				760DD00B2AD1B16C004D9315 /* BeachDetailView.swift in Sources */,
 				760DD0032AD16E7C004D9315 /* SearchBar.swift in Sources */,
+				4AABE3AB2AD2EC230065FADD /* LocationViewModel.swift in Sources */,
 				760DD0092AD1A9CB004D9315 /* TextViewModel.swift in Sources */,
 				760DD0052AD17303004D9315 /* HorizontalCardComponent.swift in Sources */,
 				760DD0072AD1906C004D9315 /* VerticalCardComponent.swift in Sources */,
@@ -312,7 +324,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,7 +354,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -214,6 +214,10 @@ struct BeachDetailView: View {
     }
 }
 
-#Preview {
-    BeachDetailView(beachInformation: BeachCard(id: UUID(), isqa: 98, beachName: "Ancol", city: "Jakarta", temperature: 26, uv: 6, windSpeed: 7), shouldOpenDetail: .constant(true))
+struct BeachDetailView_Previews:
+    PreviewProvider{
+    static var previews: some View{
+        BeachDetailView(beachInformation: BeachCard(id: UUID(), isqa: 98, beachName: "Ancol", city: "Jakarta", temperature: 26, uv: 6, windSpeed: 7), shouldOpenDetail: .constant(true))
+    }
+    
 }

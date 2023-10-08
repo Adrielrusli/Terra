@@ -22,7 +22,11 @@ struct TerraApp: App {
                         Image(systemName: "beach.umbrella")
                         Text("Coast")
                     }
-                
+                ContentView()
+                    .tabItem(){
+                        Image(systemName: "map")
+                        Text("Map")
+                    }
                 ContentView()
                     .tabItem(){
                         Image(systemName: "exclamationmark.triangle")
