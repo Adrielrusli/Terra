@@ -23,7 +23,7 @@ struct TerraApp: App {
                         Text("Coast")
                     }
                 
-                ContentView()
+                CautionView()
                     .tabItem(){
                         Image(systemName: "exclamationmark.triangle")
                         Text("Caution")

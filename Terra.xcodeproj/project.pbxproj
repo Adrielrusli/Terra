@@ -19,6 +19,7 @@
 		760DD00D2AD1B373004D9315 /* BeachModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DD00C2AD1B373004D9315 /* BeachModel.swift */; };
 		760DD00F2AD1B939004D9315 /* BeachCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DD00E2AD1B939004D9315 /* BeachCardViewModel.swift */; };
 		763225032AD2D0EF006B843B /* CautionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763225022AD2D0EF006B843B /* CautionView.swift */; };
+		763225052AD2E673006B843B /* CreatureDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763225042AD2E673006B843B /* CreatureDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		760DD00C2AD1B373004D9315 /* BeachModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachModel.swift; sourceTree = "<group>"; };
 		760DD00E2AD1B939004D9315 /* BeachCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachCardViewModel.swift; sourceTree = "<group>"; };
 		763225022AD2D0EF006B843B /* CautionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CautionView.swift; sourceTree = "<group>"; };
+		763225042AD2E673006B843B /* CreatureDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				760DCFF42AD167EE004D9315 /* TerraApp.swift */,
+				763225042AD2E673006B843B /* CreatureDetailView.swift */,
 				760DCFF62AD167EE004D9315 /* ContentView.swift */,
 				760DD00C2AD1B373004D9315 /* BeachModel.swift */,
 				763225022AD2D0EF006B843B /* CautionView.swift */,
@@ -171,6 +174,7 @@
 				760DD0052AD17303004D9315 /* HorizontalCardComponent.swift in Sources */,
 				760DD0072AD1906C004D9315 /* VerticalCardComponent.swift in Sources */,
 				760DD00D2AD1B373004D9315 /* BeachModel.swift in Sources */,
+				763225052AD2E673006B843B /* CreatureDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +316,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,7 +346,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

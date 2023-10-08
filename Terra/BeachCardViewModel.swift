@@ -7,6 +7,7 @@ class BeachCardViewModel: ObservableObject {
     private let userDefaults = UserDefaults.standard
     private let savedKey = "SavedBeachCards"
     @Published var selectedBeachCard: BeachCard?
+    @Published var selectedCreatureCard: CreatureCard?
     
     @Published var savedBeachCards: [BeachCard] = []
     

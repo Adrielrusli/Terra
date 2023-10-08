@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct BeachDetailView: View {
+    @StateObject var viewModel = BeachCardViewModel()
     var beachInformation: BeachCard
     @Binding var shouldOpenDetail : Bool
     @State var shouldOpenEmail = false
+    @State var shouldOpenCreatureDetail = false
+    @State private var creatures = CreatureCard.generateDummyDataCreature()
     var body: some View {
         
         
@@ -164,6 +167,7 @@ struct BeachDetailView: View {
                         
                         
                         VStack{
+                            Spacer()
                             HStack{
                                 Text("Spotted Marine Creature")
                                 
@@ -176,6 +180,29 @@ struct BeachDetailView: View {
                                 
                             }.frame(width: geometry.size.width * 0.8)
                             
+                            ScrollView(.horizontal){
+                                HStack(spacing: 20){
+                                    ForEach(creatures){ creature in
+                                        
+                                        Image(creature.name)
+                                            .resizable()
+                                            .clipShape(Circle())
+                                            .frame(width: 60)
+                                            .onTapGesture {
+                                                viewModel.selectedCreatureCard = creature
+                                                shouldOpenCreatureDetail = true
+                                                
+                                            }
+                                        
+                                        
+                                    }
+                                }
+                            }.frame(width: geometry.size.width * 0.8)
+                                .fullScreenCover(isPresented: $shouldOpenCreatureDetail){
+                                    if let selectedCreatureCard = viewModel.selectedCreatureCard {
+                                        CreatureDetailView(creatureInformation: selectedCreatureCard, shouldOpenCreatureDetail: $shouldOpenCreatureDetail)
+                                    }
+                                }
                         }
                         .frame(width: contentwidth, height: geometry.size.height * 0.14)
                         .background(Color(.white))
