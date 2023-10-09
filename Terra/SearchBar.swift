@@ -45,6 +45,6 @@ struct SearchBar: View {
     }
 }
 
-#Preview {
-    SearchBar(searchText: .constant(""))
-}
+//#Preview {
+//    SearchBar(searchText: .constant(""))
+//}
